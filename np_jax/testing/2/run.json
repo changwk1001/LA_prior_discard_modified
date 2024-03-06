@@ -1,0 +1,148 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "C:\\Users\\user\\OneDrive\\\u684c\u9762\\Projects\\RLAF\\np_jax",
+    "dependencies": [
+      "jax==0.4.25",
+      "numpy==1.23.5",
+      "sacred==0.8.5"
+    ],
+    "mainfile": "get_quantities.py",
+    "name": "main",
+    "repositories": [
+      {
+        "commit": "1b8db759b0b4a36f50100af856e94ba1f216dc1b",
+        "dirty": false,
+        "url": "https://github.com/ksnxr/RLAF.git"
+      },
+      {
+        "commit": "1b8db759b0b4a36f50100af856e94ba1f216dc1b",
+        "dirty": false,
+        "url": "https://github.com/ksnxr/RLAF.git"
+      },
+      {
+        "commit": "1b8db759b0b4a36f50100af856e94ba1f216dc1b",
+        "dirty": false,
+        "url": "https://github.com/ksnxr/RLAF.git"
+      },
+      {
+        "commit": "1b8db759b0b4a36f50100af856e94ba1f216dc1b",
+        "dirty": false,
+        "url": "https://github.com/ksnxr/RLAF.git"
+      },
+      {
+        "commit": "1b8db759b0b4a36f50100af856e94ba1f216dc1b",
+        "dirty": false,
+        "url": "https://github.com/ksnxr/RLAF.git"
+      },
+      {
+        "commit": "1b8db759b0b4a36f50100af856e94ba1f216dc1b",
+        "dirty": false,
+        "url": "https://github.com/ksnxr/RLAF.git"
+      }
+    ],
+    "sources": [
+      [
+        "find_map.py",
+        "_sources\\find_map_63469227dcf822754a031ec615ea24de.py"
+      ],
+      [
+        "get_ground_truth_samples.py",
+        "_sources\\get_ground_truth_samples_66872e028a550d4d210db24029183957.py"
+      ],
+      [
+        "get_quantities.py",
+        "_sources\\get_quantities_edd2ff775200ba226d84af099a3106f5.py"
+      ],
+      [
+        "jax_models.py",
+        "_sources\\jax_models_0e52280fd1d330bee9047f1ef1dd4f9e.py"
+      ],
+      [
+        "plotting_functions.py",
+        "_sources\\plotting_functions_080ef0bfe5de2d1c7654146a82fb531a.py"
+      ],
+      [
+        "utils.py",
+        "_sources\\utils_4d4d1820f789a2af7f388508a2b39c81.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"C:\\Users\\user\\anaconda3\\lib\\site-packages\\sacred\\config\\captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"C:\\Users\\user\\OneDrive\\\u684c\u9762\\Projects\\RLAF\\np_jax\\get_quantities.py\", line 304, in my_main\n    return get_quantities(model, standardized, save_figures, show_progress, _log)\n",
+    "  File \"C:\\Users\\user\\OneDrive\\\u684c\u9762\\Projects\\RLAF\\np_jax\\get_quantities.py\", line 168, in get_quantities\n    diagnose = get_banana_nuts_samples(\n",
+    "  File \"C:\\Users\\user\\OneDrive\\\u684c\u9762\\Projects\\RLAF\\np_jax\\get_ground_truth_samples.py\", line 21, in get_banana_nuts_samples\n    model = CmdStanModel(\n",
+    "  File \"C:\\Users\\user\\anaconda3\\lib\\site-packages\\cmdstanpy\\model.py\", line 215, in __init__\n    model_info = self.src_info()\n",
+    "  File \"C:\\Users\\user\\anaconda3\\lib\\site-packages\\cmdstanpy\\model.py\", line 321, in src_info\n    return compilation.src_info(str(self.stan_file), self._compiler_options)\n",
+    "  File \"C:\\Users\\user\\anaconda3\\lib\\site-packages\\cmdstanpy\\compilation.py\", line 348, in src_info\n    [os.path.join(cmdstan_path(), 'bin', 'stanc' + EXTENSION)]\n",
+    "  File \"C:\\Users\\user\\anaconda3\\lib\\site-packages\\cmdstanpy\\utils\\cmdstan.py\", line 182, in cmdstan_path\n    validate_cmdstan_path(cmdstan)\n",
+    "  File \"C:\\Users\\user\\anaconda3\\lib\\site-packages\\cmdstanpy\\utils\\cmdstan.py\", line 137, in validate_cmdstan_path\n    raise ValueError(\n",
+    "ValueError: CmdStan installataion missing binaries in C:\\Users\\user\\.cmdstan\\cmdstan-2.34.1/bin. Re-install cmdstan by running command \"install_cmdstan --overwrite\", or Python code \"import cmdstanpy; cmdstanpy.install_cmdstan(overwrite=True)\"\n"
+  ],
+  "heartbeat": "2024-03-04T23:12:05.705959",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz",
+    "gpus": {
+      "driver_version": "532.09",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce MX330",
+          "persistence_mode": false,
+          "total_memory": 2048
+        }
+      ]
+    },
+    "hostname": "DESKTOP-5632HC0",
+    "os": [
+      "Windows",
+      "Windows-10-10.0.22631-SP0"
+    ],
+    "python_version": "3.10.9"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "model": "banana",
+      "save_figures": true
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": "testing",
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "model=banana",
+        "save_figures=True"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2024-03-04T23:12:01.736975",
+  "status": "FAILED",
+  "stop_time": "2024-03-04T23:12:05.711992"
+}
